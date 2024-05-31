@@ -16,7 +16,12 @@
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error" , 
+      { 
+        "endOfLine": "auto"
+      }
+    ],
     "react/no-unescaped-entities": 0,
     "no-console": "warn",
     "quotes": [
