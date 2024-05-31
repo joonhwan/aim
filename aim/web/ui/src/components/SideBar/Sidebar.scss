@@ -70,6 +70,7 @@
     position: relative;
     padding-bottom: $space-md;
     display: flex;
+    display: none;
     flex-direction: column;
     &__anchor {
       cursor: pointer;

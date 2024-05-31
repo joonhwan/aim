@@ -24,7 +24,7 @@ function getBasePath(isApiBasePath: boolean = true): string {
 }
 
 let API_HOST: string = isDEVModeOn
-  ? `http://127.0.0.1:43800${getBasePath()}/api`
+  ? `http://192.168.70.62:43800${getBasePath()}/api`
   : `${getBasePath()}/api`;
 
 function getAPIHost() {
@@ -34,7 +34,7 @@ function getAPIHost() {
 function setAPIBasePath(basePath: string) {
   globalScope.API_BASE_PATH = basePath;
   API_HOST = isDEVModeOn
-    ? `http://127.0.0.1:43800${getBasePath()}/api`
+    ? `http://192.168.70.62:43800${getBasePath()}/api`
     : `${getBasePath()}/api`;
 }
 
